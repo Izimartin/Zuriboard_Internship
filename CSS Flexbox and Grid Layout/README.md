@@ -13,8 +13,9 @@
 - You can use any background color of your choice
 
 # Previews
-
+##### Flexbox
 ![Index-Grid](images/ofrkupd8a9wh1wenvr8c.jpg)
 
+##### Gridbox
 ![Grid-Html](images/grid-layout.PNG)
 
