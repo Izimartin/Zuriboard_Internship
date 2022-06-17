@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    /* COLORS */
+    /* Primary */
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    /* Accent */
+    --Blue: hsl(248, 32%, 49%);
+    /* Neutral */
+    --DarkBlue: hsl(249, 10%, 26%);
+    --GrayishBlue: hsl(246, 25%, 77%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+
+.white-text {
+    color: white;
+}
+
+button {
+    cursor: pointer;
+}
+
+main {
+    background: var(--Red);
+    max-width: 1440px;
+    height: 100vh;
+    
+}
+
+.container{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-image: url('./images/bg-intro-desktop.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px 40px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.info h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    line-height: 1.1;
+}
+
+.info p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.form__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.form__header button {
+    background: var(--Blue);
+    width: 400px;
+    padding: 14px 50px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0px 5px 4px 0px #000;
+}
+
+.form__header button span {
+    font-weight: 400;
+}
+
+form {
+    padding: 20px;
+    width: 400px;
+    background:white;
+    border-radius: 5px;
+    box-shadow: 0px 5px 4px 0px #000;
+}
+
+form input {
+    width: 360px;
+    padding: 12px 50px;
+    border: .5px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+    margin: 5px 0;
+    outline: none;
+}
+
+
+form button {
+    background: var(--Green);
+    width: 360px;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    box-shadow: 0px 5px 4px 0px #000;
+}
+
+form p {
+    font-size: 10px;
+}
+
+form p span{
+    font-weight: 700;
+    color: var(--Red);
+}
+
+@media screen and (max-width: 375px){
+    main {
+        background: var(--Red);
+        max-width: 100%;
+        height: auto;
+        overflow-x: hidden;
+        
+    }
+    .container{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        background-image: url('./images/bg-intro-mobile.png');
+    }
+    .wrapper {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 0;
+        padding-bottom: 100px;
+    }
+    
+    .info {
+        align-items: center;
+    }
+
+    .info h2 {
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .info p {
+        width: 365px;
+        font-size: 15px;
+        line-height: 1.7;
+        text-align: center;
+    }
+
+    .form__wrapper {
+        align-items: center !important;
+    }
+    
+    .form__header button {
+        background: var(--Blue);
+        width: 300px;
+    }
+    
+    form {
+        padding: 20px;
+        width: 300px;
+        background:white;
+        border-radius: 5px;
+    }
+    
+    form input {
+        width: 260px;
+        padding: 12px 50px;
+        border: .5px solid hsl(246, 25%, 77%);
+        border-radius: 5px;
+        margin: 5px 0;
+        outline: none;
+    }
+    
+    
+    form button {
+        background: var(--Green);
+        width: 260px;
+        padding: 10px 50px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        color: white;
+        font-weight: bold;
+        font-size: 10px;
+        text-transform: uppercase;
+        margin-top: 15px;
+    }
+    
+    form p {
+        font-size: 12px;
+        text-align: center;
+        line-height: 1.5;
+    }
+    
+    form p span{
+        font-weight: 700;
+        color: var(--Red);
+    }
+}
