@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav a {
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 15px;
+    margin-top: 30px;
+    color: blue;
+    text-decoration: none;
+    border-bottom: 2px solid blue;
+  }
+  
+  nav a:hover {
+    color: #ffa401;
+    border-bottom: 2px solid #ffa401;
+  }
+  
+
+.bright-orange {
+    background: hsl(31, 77%, 52%);
+    border-radius: 5px 0px 0px 5px;
+}
+
+.dark-cyan {
+    background: hsl(184, 100%, 22%);
+}
+
+.very-dark-cyan {
+    background: hsl(179, 100%, 13%);
+    border-radius: 0px 5px 5px 0px;
+}
+
+.bright-orange-text {
+    color: hsl(31, 77%, 52%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+.dark-cyan-text {
+    color: hsl(184, 100%, 22%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+.very-dark-cyan-text {
+    color: hsl(179, 100%, 13%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: 100px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid__item {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    padding-bottom: 50px;
+}
+
+.grid__item img {
+    width: 52px;
+}
+
+.grid__item h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 15px 0;
+    color: hsl(0, 0%, 95%);
+}
+
+.grid__item p {
+    width: 200px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    line-height: 1.5;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.btn {
+    margin-top: 80px;
+}
+
+.btn a {
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: none;
+    width: 100px;
+    background: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+}
+
+.btn a:hover {
+    background: transparent;
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    color: hsla(0, 0%, 100%, 0.75);
+    cursor: pointer;
+}

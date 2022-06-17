@@ -1,0 +1,88 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background: #000000;
+}
+
+header {
+  color: white;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  font-size: 20px;
+  font-weight: 400;
+  margin-right: 15px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+}
+
+nav a:hover {
+  color: #ffa401;
+  border-bottom: 2px solid #ffa401;
+}
+
+/* components */
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, auto);
+
+  padding-block: 2rem;
+  width: min(90%, 60rem);
+  margin-inline: auto;
+}
+
+.grid-item {
+  padding: 4rem;
+}
+
+.grid-col-span-2 {
+  grid-column: span 2;
+}
+
+.a {
+  background: #eb5020;
+  height: 170px;
+}
+
+.b {
+  background: #ffa401;
+  width: 150px;
+  height: 170px;
+}
+
+.c {
+  grid-column: span 1;
+  width: 250px;
+  height: 200px;
+  background: #05aa42;
+}
+
+.d {
+  display: grid;
+  width: 300px;
+  padding: 0;
+  gap: 1rem;
+}
+
+.d div {
+  width: auto;
+  height: auto;
+  background: #01aefd;
+}
